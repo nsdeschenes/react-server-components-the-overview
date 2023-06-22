@@ -1,0 +1,36 @@
+"use client";
+
+interface PokemonProps {
+  name: string;
+  imageSrc: string;
+  imageAlt: string;
+  abilities: string[];
+}
+
+export default function Pokemon({
+  name,
+  imageSrc,
+  imageAlt,
+  abilities,
+}: PokemonProps) {
+  return (
+    <div>
+      <h2>Name: {name}</h2>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={imageSrc}
+        alt={imageAlt}
+        style={{ imageRendering: "pixelated" }}
+        width={128}
+      />
+      <h2>Abilities:</h2>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <ul style={{ maxWidth: "fit-content", textAlign: "left" }}>
+          {abilities.map((ability) => (
+            <li key={ability}>{ability}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}

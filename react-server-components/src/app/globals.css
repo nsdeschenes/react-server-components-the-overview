@@ -75,3 +75,26 @@ button {
     transform: translateX(-100%);
   }
 }
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #333;
+}

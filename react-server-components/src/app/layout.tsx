@@ -11,7 +11,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ul className="nav-links">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/fetch-and-pass">Fetch and pass via props example</a>
+          </li>
+          <li>
+            <a href="/donuts-of-interactivity">
+              Donuts of interactivity example
+            </a>
+          </li>
+          <li>
+            <a href="dependencies-on-the-server">
+              Dependencies on the server example
+            </a>
+          </li>
+        </ul>
+        {children}
+      </body>
     </html>
   );
 }
