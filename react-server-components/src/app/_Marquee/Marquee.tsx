@@ -19,8 +19,8 @@ function Marquee() {
   return (
     <div className="marquee">
       <p>
-        This app is built with React Server Components (and Next) 🎉 Today&apos;
-        date is: {date}
+        This app is built with React Server Components (and NextJS) 🎉
+        Today&apos; date is: {date}
       </p>
     </div>
   );
