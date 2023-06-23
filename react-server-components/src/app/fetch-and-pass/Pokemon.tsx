@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 interface PokemonProps {
   name: string;
   imageSrc: string;
@@ -13,6 +15,8 @@ export default function Pokemon({
   imageAlt,
   abilities,
 }: PokemonProps) {
+  const [count, setCount] = useState(0);
+
   return (
     <div>
       <h2>Name: {name}</h2>
@@ -31,6 +35,9 @@ export default function Pokemon({
           ))}
         </ul>
       </div>
+      <button onClick={() => setCount(count + 1)}>
+        Pokemon Counter: {count}
+      </button>
     </div>
   );
 }
