@@ -1,9 +1,6 @@
 import TabNav from "./TabNav";
 import { AwesomeTab, CoolTab } from "./Tabs";
 
-// force component to be server-side rendered
-export const revalidate = 0;
-
 export default function DonutsOfInteractivityPage({
   searchParams,
 }: {

@@ -1,9 +1,6 @@
 import { marked } from "marked";
 import sanitizeHTML from "sanitize-html";
 
-// force component to be server-side rendered
-export const revalidate = 0;
-
 const markdown = `
 ## Dependencies on the Server
 
